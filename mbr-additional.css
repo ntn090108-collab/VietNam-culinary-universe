@@ -808,3 +808,16 @@ a {
 .cid-vcrOoxoHhQ .content-head {
   max-width: 800px;
 }
+/* FIX Mobirise override */
+
+.mobirise-area {
+  background: transparent !important;
+}
+
+.mobirise-area section {
+  background: transparent !important;
+}
+
+.mbr-overlay {
+  display: none !important;
+}
