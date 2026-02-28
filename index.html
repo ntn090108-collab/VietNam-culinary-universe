@@ -267,12 +267,27 @@ h3{
   color:#444;
 }
 a{
-  color:inherit;
+  color: #141414 ;
+  display: block;
 }
 .chu {
   font-size: 14px;
   color: white;
   margin-top: 10px;
+/* CHẶN Mobirise ảnh hưởng toàn web */
+
+body:not(.mobirise-area) {
+  font-family: inherit;
+}
+
+.mobirise-area {
+  all: initial;
+  font-family: Arial, sans-serif;
+}
+
+.mobirise-area * {
+  box-sizing: border-box;
+}
 </style>
 </head>
 
@@ -412,8 +427,11 @@ Việc mời cơm khách không chỉ là hành động hiếu khách mà còn l
 </section>
 
 <!-- phần liên lạc -->
-<section data-bs-version="5.1" class="form5 cid-vcrOoxoHhQ" id="form02-3">
-    
+<div class="mobirise-area">
+
+    <!-- code mobirise dán vào đây -->
+    <section class="form5 cid-uL8nQpYxAh" id="form02-3">
+         
     
     <div class="container">
         <div class="row justify-content-center">
@@ -454,6 +472,7 @@ Việc mời cơm khách không chỉ là hành động hiếu khách mà còn l
         </div>
     </div>
 </section>
+
 
 <script src="bootstrap.bundle.min.js"></script>
 <script src="smooth-scroll.js"></script>
