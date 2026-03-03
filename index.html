@@ -502,7 +502,18 @@ Việc mời cơm khách không chỉ là hành động hiếu khách mà còn l
 <button class="nav-btn right" onclick="slide(1)">❯</button>
 </div>
 </section>
+<script>
+function slide(direction) {
+  const slider = document.getElementById("slider");
 
+  const scrollAmount = 350; // khoảng trượt
+
+  slider.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
+</script>
 <!-- SO SÁNH -->
 <section id="compare">
 <h2 class="section-title">Sự khác biệt ẩm thực 3 miền</h2>
