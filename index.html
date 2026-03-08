@@ -416,6 +416,46 @@ a{
     width:100%;
     display:block;
 }
+/* ===== CONTACT LAYOUT NEW ===== */
+
+.contact-layout{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+max-width:1200px;
+margin:auto;
+flex-wrap:wrap;
+}
+
+/* FORM LEFT */
+
+.contact-box{
+flex:1;
+max-width:600px;
+}
+
+/* IMAGE RIGHT */
+
+.contact-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.contact-image img{
+width:100%;
+max-width:500px;
+border-radius:25px;
+object-fit:cover;
+box-shadow:
+0 20px 60px rgba(0,0,0,0.7);
+transition:0.4s;
+}
+
+.contact-image img:hover{
+transform:scale(1.05);
+}
 </style>
 </head>
 
@@ -587,6 +627,8 @@ function slide(direction) {
 <!-- Phần form -->
 <section class="contact-form">
 
+<div class="contact-layout">
+
 <div class="contact-box">
 <h1>GÓP Ý</h1>
 
@@ -609,7 +651,7 @@ function slide(direction) {
 
 <div class="input-group">
 <textarea name="message" required></textarea>
-<label>Ý kiến </label>
+<label>Ý kiến</label>
 </div>
 
 <button type="submit" class="send-btn">
@@ -619,8 +661,16 @@ Gửi
 <p id="form-status"></p>
 
 </form>
+</div>
+
+<!-- ẢNH BÊN PHẢI -->
+
+<div class="contact-image">
+<img src="https://bepadong.vn/upload/202410/11/ban-do-am-thuc-Wvk.jpg">
+</div>
 
 </div>
+
 </section>
 <script>
 const form = document.getElementById("contactForm");
